@@ -10,3 +10,4 @@ the actual bottleneck in speed.
 **This for better DX and not more speed**
 
 ## I think i know what happened the last time
+- Using bitstrings is a bad idea: 0010000 -> 0001000 is not a 2 bit change, its a 24 change (16+8).
