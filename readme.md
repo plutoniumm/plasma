@@ -7,4 +7,5 @@ A graveyard of burnt ideas and experiments primarily focused on the QML.
 Try
 - SD on Qnoise
 - PySR on something...?
+- something with KANs
 -->

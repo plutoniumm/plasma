@@ -26,13 +26,13 @@ class MLP(nn.Module):
       nn.Linear(d_hidden, d_data * 2)
     ) for _ in range(N)])
 
-  def fwd(self, x, t: int):
+  def forward(self, x, t: int):
     h = self.head(x)
     return self.tail[t](h)
 
 
 class DiffusionModel(nn.Module):
-  def __init__(self, model: nn.Module, n_steps=40, device='cuda'):
+  def __init__(self, model: nn.Module, n_steps=40, device='mps'):
     super().__init__()
     self.model = model
     self.device = device
